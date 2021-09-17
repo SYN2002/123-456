@@ -1,34 +1,6 @@
 #include<stdio.h>
-#include<stdlib.h>
-
-int top=-1,size,*arr;
-
-void push(int n){
-    if(top==size-1)
-    printf("\nStack is full!\n");
-    else{
-        top=top+1;
-        arr[top]=n;
-        printf("\nInsert %d!\n",arr[top]);
-    }
-}
-void pop(){
-    if(top==-1)
-    printf("\nStack is empty!\n");
-    else{
-        printf("\ndelete %d",arr[top]);
-        top--;
-    }
-}
-void display(){
-    if(top==-1)
-    printf("\nStack is empty!!\n");
-    else{
-        for(int i=top;i>=0;i--)
-        printf("%d\t",arr[i]);
-    }
-}
-
+#include<math.h>
+int size,*arr;
 int main()
 {
     int item,choice;
@@ -53,6 +25,5 @@ int main()
             default: printf("INVALID!");
         }
     }
-
     return 0;
 }
