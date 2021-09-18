@@ -34,7 +34,7 @@ void search(int item){
     }
 }
 
-void remov(int item){
+void delete(int item){
 	int poi,j;
 	for ( j = 0; j < size; j++)
     {
@@ -69,7 +69,7 @@ int main()
         scanf("%d",&choice);
         switch(choice)
 		{
-            case 1: printf("Enter the value and position you want to update: ");
+            case 1: printf("Enter the updated value and position you want to update: ");
                     scanf("%d%d",&item,&poi);
                     update(item,poi);
                     break;
@@ -83,7 +83,7 @@ int main()
                     break;
             case 4: printf("Enter the value you want to remove: ");
                     scanf("%d",&item);
-                    remov(item);
+                    delete(item);
                     break;
             case 5: display();
                     break;
