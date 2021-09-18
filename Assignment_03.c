@@ -1,7 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-int top=-1,size,*arr;
+int top=-1,size;
+int *arr;
 
 int isFull(){
     if(top==size-1)
