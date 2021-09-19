@@ -24,13 +24,16 @@ void insert(int poi,int item){
 }
 
 void search(int item){
+    int c=0;
 	for ( i = 0; i < size; i++)
     {
         if(arr[i]==item){
         	printf("The element %d is in '%d' position",item,i+1);
+            c++;
 		}
-        else
-            printf("NOT FOUND!");
+    }
+    if(c==0){
+        printf("NOT FOUND");
     }
 }
 
@@ -64,7 +67,7 @@ int main()
     while(1)
 	{
         printf("\n***MENU***\n");
-        printf("1. update\n2. insert\n3. search\n4. remove\n5. display\n6. exit");
+        printf("1. update\n2. insert\n3. search\n4. delete\n5. display\n6. exit");
         printf("\n\nEnter your choice: ");
         scanf("%d",&choice);
         switch(choice)
