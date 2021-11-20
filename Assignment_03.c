@@ -1,3 +1,4 @@
+//Write a menu driven program to implement a stack using array and perform the stack operations.
 #include<stdio.h>
 #include<stdlib.h>
 
